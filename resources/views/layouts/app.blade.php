@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            @guest
+                <li><a href="">Become A Partner</a></li>    
+            @endguest
+            
+            @auth
+                <li><a href="">Dashboard</a></li>    
+            @endauth            
+            <li><a href="">Send A Package</a></li>
+        </ul>
+    </nav>
     @yield('content')
 </body>
 </html>
