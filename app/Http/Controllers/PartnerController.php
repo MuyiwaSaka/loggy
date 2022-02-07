@@ -7,4 +7,9 @@ use Illuminate\Http\Request;
 class PartnerController extends Controller
 {
     //
+    public function index()
+    {
+        # code...
+        return view('partner.register');
+    }
 }
