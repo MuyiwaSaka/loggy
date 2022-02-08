@@ -14,7 +14,11 @@ class PartnerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'companyname' => $this->faker->name(),
+            'companyemail' => $this->faker->unique()->safeEmail(),
+            'email_verified_at' => now(),
+            'companyaddress' => $this->faker->address(),
+             
         ];
     }
 }

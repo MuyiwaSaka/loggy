@@ -20,7 +20,7 @@ class CreatePartnersTable extends Migration
             $table->string('companyaddress')->nullable();
             $table->string('preferredpickup')->nullable();
             $table->string('pickupgeolocation')->nullable();
-            $table->string('phone');
+            $table->string('phone');            
             $table->string('website')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
